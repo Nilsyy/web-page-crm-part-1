@@ -39,6 +39,8 @@ main{
 
 .contact h2{
   display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: yellow;
 }
 
 .contact a{
