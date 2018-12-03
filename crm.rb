@@ -29,6 +29,7 @@ end
 get '/about' do
   @title = "About Me"
   @skills = skills = ["amazing", "Juggle", "Dave"]
+  @interests = interests = ["hockey", "nutrition", "Fabio"]
    erb :about
 end
 
@@ -66,8 +67,6 @@ put '/contacts/:id' do
     raise Sinatra::NotFound
   end
 end
-
-
 
 after do
   ActiveRecord::Base.connection.close
